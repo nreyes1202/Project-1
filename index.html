@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +9,59 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
+
 <body>
-    <div class="wrapper1 auto-center">
+    <div class="wrapper1 auto-center col-sm-12">
         <div id="header" class="d-flex justify-content-center">
             <h1>To Do Or Not To Do List</h1>
         </div>
-        <form>
-            <div class="form-group">
-                <label for = "toDoInput"></label>
-                <input type = "toDo" class = "form-control" id = "toDoInput" placeholder = "Write your to-do here.">
-            </div>
-            <div class="form-group">
-                <label for = "categoryInput"></label>
-                <input type = "category" class = "form-control" id = "categoryInput" placeholder = "Select or add the category here.">
-            </div>
-            <div class="form-group">
-                <label for = "colorOfInput"></label>
-                <input type = "color" class = "form-control" id = "colorOfInput" placeholder = "Select color of to-do.">
-            </div>
-            <div class="form-group">
-                <label for = "importanceLevelInput"></label>
-                <input type = "importanceLevel" class = "form-control" id = "importanceLevelInput" placeholder = "Select level of importance.">
-            </div>
-            <div class="form-group">
-                <label for = "dateDueInput"></label>
-                <input type = "dateDue" class = "form-control" id = "dateDueInput" placeholder = "Select date due">
-            </div>
-            <button type="submit" class="btn btn-primary">Add To-do</button>
-        </form>
-        <div class="wrapper1">
-            <img src="assets/images/filler-avatar.png" 
-                alt="Avatar" id="avatar" class="d-inline">
-            <div id="score" class="d-inline">score card</div>
-        </div>
-        <div id="to-do">to-do list</div>
     </div>
-    
+    <div class="col-sm-12 col-md-8 d-inline">
+        <form >
+            <div class="form-group">
+                <label for="toDoInput"></label>
+                <input type="toDo" class="form-control" id="toDoInput" placeholder="Write your to-do here.">
+            </div>
+            <div class="form-group">
+                <label for="categoryInput"></label>
+                <input type="category" class="form-control" id="categoryInput"
+                    placeholder="Select or add the category here.">
+            </div>
+            <div class="form-group">
+                <label for="colorOfInput"></label>
+                <input type="color" class="form-control" id="colorOfInput" placeholder="Select color of to-do.">
+            </div>
+            <div class="form-group">
+                <label for="importanceLevelInput"></label>
+                <input type="importanceLevel" class="form-control" id="importanceLevelInput"
+                    placeholder="Select level of importance.">
+            </div>
+            <div class="form-group">
+                <label for="dateDueInput">
+
+                </label>
+                <input type="dateDue" class="form-control" id="dateDueInput" placeholder="Select date due">
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Add To-do
+            </button>
+        </form>
+    </div>
+    <div id="score" class="d-inline col-sm-4">
+        score card
+    </div>
+    <div class="col-sm-6 col-md-4 d-inline">
+        <img src="assets/images/filler-avatar.png" alt="Avatar" id="avatar" class="d-inline">
+    </div>
+    <div id="to-do" class="col-sm-12">to-do list</div>
+    </div>
+
 </body>
+
 </html>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
