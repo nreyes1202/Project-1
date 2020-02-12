@@ -19,7 +19,7 @@ $("#submitButton").on("click", function(event)
     var userToDo = $("#toDoInput").val().trim();
     var toDoCategory = $("#categoryInput").val().trim();
     var toDoColor = $("#colorOfInput").val().trim();
-    var toDoImportanceLevel = $("#importanceLevel").val().trim();
+    var toDoImportanceLevel = $("#importanceLevelInput").val().trim();
     var toDoDueDate = $("#dateDueInput").val().trim();
 
     //Creates local "temporary" object for holding new to-do data
@@ -44,7 +44,7 @@ $("#submitButton").on("click", function(event)
     //clears all text-boxes
     $("#toDoInput").val("");
     $("#categoryInput").val("");
-    $("#colorOfInput").val("");
+    $("#colorOfInput").val("#000000");
     $("#importanceLevel").val("");
     $("#dateDueInput").val("");
 });
