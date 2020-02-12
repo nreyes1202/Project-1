@@ -48,3 +48,4 @@ $("#submitButton").on("click", function(event)
     $("#importanceLevel").val("");
     $("#dateDueInput").val("");
 });
+
