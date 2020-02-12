@@ -49,3 +49,16 @@ $("#submitButton").on("click", function(event)
     $("#dateDueInput").val("");
 });
 
+//Create firebase event for adding a row in the html when a user adds an entry.
+database.ref().on("child_added", function(childSnapshot)
+{
+    console.log(childSnapshot.val());
+
+    //Store everything into a variable.
+    var objectCategory = child.Snapshot.val().category;
+    var objectColor = child.Snapshot.val().color;
+    var objectDate = child.Snapshot.val().date;
+    var objectImportance = child.Snapshot.val().importance;
+    var objectToDo = child.Snapshot.val().todo;
+});
+
