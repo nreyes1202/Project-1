@@ -1,5 +1,32 @@
+
+
 div {
-    border: 1px solid black;
+    border: 5px double #fbd1d3;
+    margin: 10px;
+    
+}
+input[type=toDo]:focus {
+    background-color: deeppink;
+  }
+  input[type=color]:focus {
+    background-color: deeppink;
+  }
+  input[type=date]:focus {
+    background-color: deeppink;
+  }
+  select[type=categories]:focus {
+    background-color: deeppink;
+  }
+  select[type=importance]:focus {
+    background-color: deeppink;
+  }
+  button{
+      background-color: #ebb2d6;
+  }
+  
+
+#header{
+    color: #f198af;
 }
 
 .wrapper1 {
