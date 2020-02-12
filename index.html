@@ -25,13 +25,16 @@
                 <input type="toDo" class="form-control" id="toDoInput" placeholder="Write your to-do here.">
             </div>
 
-            <div class="form-group">
-                <label for="categoryInput"></label>
-                <input type="category" class="form-control" id="categoryInput"
-                    placeholder="Select or add the category here.">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Work</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Events</a>
+                </div>
             </div>
-
-
             <div class="form-group">
                 <label for="colorOfInput"></label>
                 <input type="color" class="form-control" id="colorOfInput" placeholder="Select color of to-do.">
@@ -56,10 +59,10 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
-
