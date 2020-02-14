@@ -48,6 +48,7 @@ input[type=toDo]:focus {
     color: white;
 }
 .wrapper1{
+    width: 90vw;
     background-color: #f2cfd5;
 }
 
