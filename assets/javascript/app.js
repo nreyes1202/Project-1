@@ -67,9 +67,9 @@ database.ref().on("child_added", function(childSnapshot)
 //var counter = 0;
     
     //counter
-    $('#low').on("submit", function() {
+    $('#low').on("add-to-do", function() {
 
 
-        alert("clicked!");
+        
     });
     
