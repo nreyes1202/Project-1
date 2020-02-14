@@ -62,3 +62,11 @@ database.ref().on("child_added", function(childSnapshot)
     var objectToDo = child.Snapshot.val().todo;
 });
 
+//Creating score for each finished list item depending on importance level.
+
+var counter = 0;
+
+var numberOptions = [2, 4, 6];
+
+
+
