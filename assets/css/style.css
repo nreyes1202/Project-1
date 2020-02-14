@@ -1,10 +1,12 @@
 body{
-    background: url("../images/pink_rice/pink_rice.png")
+    background: url("../images/pink_rice/pink_rice.png");
+    
 }
 
 div {
-    border: 5px double #df5286;
+    border: 5px double #fe5bac;
     margin: 10px;
+    font-family: 'Rochester', cursive;
     
 }
 input[type=toDo]:focus {
@@ -27,19 +29,27 @@ input[type=toDo]:focus {
   }
 
   #submitButton{
-      color: #fe5bac;
-      background-color: #df5286;
+      color: white;
+      background-color: #fe5bac;
       margin-left: 10px;
   }
+
+  label{
+      margin-left: 5px;
+      color: white;
+      font-size: 25px;
+  }
+
+
  
   
 
 #header{
-    color: #fe5bac;
+    color: white;
 }
-
-.wrapper1 {
+.wrapper1{
     width: 90vw;
+    background-color: #f2cfd5;
 }
 
 .auto-center {
