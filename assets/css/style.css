@@ -40,10 +40,6 @@ input[type=toDo]:focus {
       font-size: 25px;
   }
 
-
- 
-  
-
 #header{
     color: white;
 }
@@ -57,6 +53,7 @@ input[type=toDo]:focus {
 
 #avatar {
     width: 40vw;
+    margin: 1vw;
 }
 
 
