@@ -55,10 +55,29 @@ database.ref().on("child_added", function(childSnapshot)
     console.log(childSnapshot.val());
 
     //Store everything into a variable.
-    var objectCategory = child.Snapshot.val().category;
-    var objectColor = child.Snapshot.val().color;
-    var objectDate = child.Snapshot.val().date;
-    var objectImportance = child.Snapshot.val().importance;
-    var objectToDo = child.Snapshot.val().todo;
+    var objectToDo = childSnapshot.val().todo;
+    var objectCategory = childSnapshot.val().category;
+    var objectImportance = childSnapshot.val().importance;
+    var objectDate = childSnapshot.val().date;
+    var objectColor = childSnapshot.val().color;
+
+    //To-Do Information
+    console.log(objectToDo);
+    console.log(objectCategory);
+    console.log(objectImportance);
+    console.log(objectDate);
+    console.log(objectColor);
+
+    //Create the new row
+    var newRow = $("<tr>").append(
+        $("<td>").text(objectToDo),
+        $("<td>").text(objectCategory),
+        $("<td>").text(objectImportance),
+        $("<td>").text(objectDate)
+        // $("<td>").text(objectTimeLeft)
+    );
+
+    //Append the new row to the table
+    $("#to-do-table > tbody").append(newRow);
 });
 
