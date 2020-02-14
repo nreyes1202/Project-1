@@ -38,9 +38,9 @@ input[type=toDo]:focus {
     color: #fe5bac;
 }
 
-.wrapper1 {
+/* .wrapper1 {
     width: 90vw;
-}
+} */
 
 .auto-center {
     margin: 0 auto;
