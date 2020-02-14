@@ -1,5 +1,41 @@
+body{
+    background: url("../images/pink_rice/pink_rice.png")
+}
+
 div {
-    border: 1px solid black;
+    border: 5px double #df5286;
+    margin: 10px;
+    
+}
+input[type=toDo]:focus {
+    background-color: #fe5bac;
+  }
+  input[type=color]:focus {
+    background-color: #fe5bac;
+  }
+  input[type=date]:focus {
+    background-color: #fe5bac;
+  }
+  select[type=categories]:focus {
+    background-color: #fe5bac;
+  }
+  select[type=importance]:focus {
+    background-color: #fe5bac;
+  }
+  {
+      background-color: #ebb2d6;
+  }
+
+  #submitButton{
+      color: #fe5bac;
+      background-color: #df5286;
+      margin-left: 10px;
+  }
+ 
+  
+
+#header{
+    color: #fe5bac;
 }
 
 /* .wrapper1 {
