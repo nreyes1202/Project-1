@@ -20,13 +20,13 @@
 </head>
 
 <body>
-    <div class="auto-center col-sm-12">
-        <div id="header" class="d-flex justify-content-center col-sm-12">
+    <div class="auto-center col-sm-12 col-md-12">
+        <div id="header" class="d-flex justify-content-center">
             <h1>To Do Or Not To Do List</h1>
         </div>
 
-        <div >
-            <form class="col-sm-12 col-md-8 d-inline">
+        <section class="col-sm-12 col-md-8 d-inline">
+            <form >
                 <div class="form-group">
                     <label for="toDoInput"></label>
                     <input type="toDo" class="form-control" id="toDoInput" placeholder="Write your to-do here.">
@@ -55,17 +55,19 @@
                     Add To-do
                 </button>
             </form>
-        </div>
+        
+    
         <div id="score" class="d-inline col-sm-6 col-md-4">
             score card
         </div>
         <div class="col-sm-6 col-md-4 d-inline">
             <img src="assets/images/filler-avatar.png" alt="Avatar" id="avatar" class="d-inline">
         </div>
-        <div class = "col-md-12">
-            <div class = "card mb-4">
-                <div class = "card-header">To-Do List</div>
-                <div class = "card-body">
+
+    </section>
+            <div class = "card-style mb-4 col-md-12">
+                <div class = "card-style  card-header col-md-12">To-Do List</div>
+                <div class = "card-style  card-body  col-md-12">
                     <table class = "table table-sm table-hover" id = "to-do-table">
                         <thead>
                             <tr>
@@ -81,7 +83,6 @@
                     </table>
                 </div>
             </div>
-        </div>
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
