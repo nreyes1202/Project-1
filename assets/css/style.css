@@ -41,12 +41,15 @@ input[type=toDo]:focus {
       font-size: 25px;
   }
 
+<<<<<<< HEAD
   .card-header{
     color: #fe5bac;
   }
  
   
 
+=======
+>>>>>>> 0a65e2d5dd437641c88ffc3046d4cd5425b217c3
 #header{
     color: white;
 }
@@ -63,6 +66,7 @@ input[type=toDo]:focus {
 
 #avatar {
     width: 40vw;
+    margin: 1vw;
 }
 
 
