@@ -98,3 +98,14 @@ $(document).on("click", ".checkbox", function()
     alert("I've been clicked.")
 });
 
+// Assigning score to importance levels.
+var scoreKeeper = 0;
+var lowImportance = 2;
+var mediumImportance = 4;
+var highImportance = 6;
+
+// When checkbox is clicked, this will assign points.
+$(".checkbox").click(function(){
+    $(this).append();
+  });
+
