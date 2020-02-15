@@ -90,12 +90,11 @@ database.ref().on("child_added", function(childSnapshot)
 
 //Creating score for each importance level item.
 
-//var counter = 0;
+    $('.checkbox').data('low', 2);
     
-    //counter
-    $('#low').on("add-to-do", function() {
+//  //Create checkmark button to add before todo.
+//  var checkmark = $("<button>");
 
-
-        
-    });
-    
+//  checkmark.attr("dat-to-do");
+//  checkmark.addClass("checkbox");
+//  checkmark.text("✓");
