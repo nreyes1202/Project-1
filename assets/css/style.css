@@ -69,16 +69,33 @@ label{
   margin: 1vw;
 }
 
+#score-box {
+  height: 50vh;
+  width: 30%;
+}
+
 #glitter {
   height: 50vh;
-  width: 33%;
+  width: 100%;
   margin: 1vw;
 }
 
-.score-keeper {
-  position: absolute;
+.score-title {
+  position: relative;
   background-color: none;
   color: white;
+  text-align: center;
+  font-size: 10vw;
+  top: -270px;
+}
+
+.score-keeper {
+  position: relative;
+  background-color: none;
+  color: white;
+  text-align: center;
+  font-size: 10vw;
+  top: -270px;
 }
 
 .checkbox {
