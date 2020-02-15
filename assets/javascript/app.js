@@ -99,17 +99,17 @@ database.ref().on("child_added", function(childSnapshot)
 //     alert("I've been clicked!");
 // });
 
+
+// Moving a completed item from to-do list to done-be-do list"
 $(function () {
-    function moveItems(origin, comp) {
-        $(origin).find('itemID').appendTo(comp);
+
+    function moveItems(origin, complete) {
+        $(origin).find(':selected').appendTo(complete);
     }
-
-
-
-
-
-
-
+    $("#itemId").click(function () {
+        moveItems("#completed-to-do", "#to-do-table")
+        //console.log("this is" + itemId)
+    });
 
 
 });
