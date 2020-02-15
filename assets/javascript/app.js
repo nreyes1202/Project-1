@@ -88,7 +88,9 @@ database.ref().on("child_added", function(childSnapshot)
     $("#to-do-table > #to-do-list").append(newRow);
 });
 
+
 $(".checkbox").on("click", function()
 {
     alert("clicked");
 });
+
