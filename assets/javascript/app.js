@@ -70,7 +70,7 @@ database.ref().on("child_added", function(childSnapshot)
 
     //Create checkmark button to add before todo.
     var checkmark = $("<button>");
-
+    
     checkmark.attr("dat-to-do");
     checkmark.addClass("checkbox");
     checkmark.text("✓");
@@ -88,7 +88,7 @@ database.ref().on("child_added", function(childSnapshot)
     $("#to-do-table > #to-do-list").append(newRow);
 });
 
-$(".checkbox").on("click", function()
+$(document).on("click", ".checkbox", function()
 {
-    alert("clicked");
+    alert("I've been clicked.")
 });
