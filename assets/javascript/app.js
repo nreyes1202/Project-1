@@ -85,7 +85,12 @@ database.ref().on("child_added", function(childSnapshot)
     );
 
     //Append the new row to the table
-    $("#to-do-table > tbody").append(newRow);
+    $("#to-do-table > #to-do-list").append(newRow);
 });
-    
-    
+
+
+$(".checkbox").on("click", function()
+{
+    alert("clicked");
+});
+
