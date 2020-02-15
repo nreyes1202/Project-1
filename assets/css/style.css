@@ -77,7 +77,9 @@ label{
 
 .score-keeper {
   position: absolute;
-  background-color: #fe5bac;
+  background-color: none;
+  color: white;
+}
 
 .checkbox {
   margin: 3px 10px 3px 0px;
