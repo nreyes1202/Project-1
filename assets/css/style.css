@@ -2,6 +2,10 @@ body{
     background: url("../images/pink_rice/pink_rice.png");
     
 }
+#submitButton{
+    color: white;
+    background-color: #fe5bac;
+}
 
 div {
     border: 5px double #fe5bac;
@@ -28,11 +32,7 @@ input[type=toDo]:focus {
       background-color: #ebb2d6;
   }
 
-  #submitButton{
-      color: white;
-      background-color: #fe5bac;
-      margin-left: 10px;
-  }
+
 
   label{
       margin-left: 5px;
@@ -40,7 +40,9 @@ input[type=toDo]:focus {
       font-size: 25px;
   }
 
-
+  .card-header{
+    color: #fe5bac;
+  }
  
   
 
@@ -50,24 +52,27 @@ input[type=toDo]:focus {
 .wrapper1{
     width: 90vw;
     background-color: #f2cfd5;
+
+}
+
+#score {
+    width: 100%;
 }
 
 .auto-center {
     margin: 0 auto;
+    max-width: 960px;;
+
 }
 
 #avatar {
-    width: 40vw;
+    height: 50vh;
+    margin: 1vw;
 }
 
-
-
-
-
-@media only screen and (max-width: 960px) and (min-width: 640px) {
-
+#glitter {
+    height: 50vh;
+    width: 33%;
+    margin: 1vw;
 }
 
-@media only screen and (max-width: 639px) {
-
-}

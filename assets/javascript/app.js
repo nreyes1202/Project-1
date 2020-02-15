@@ -68,9 +68,16 @@ database.ref().on("child_added", function(childSnapshot)
     console.log(objectDate);
     console.log(objectColor);
 
+    //Create checkmark button to add before todo.
+    var checkmark = $("<button>");
+
+    checkmark.attr("dat-to-do");
+    checkmark.addClass("checkbox");
+    checkmark.text("✓");
+
     //Create the new row
     var newRow = $("<tr>").append(
-        $("<td>").text(objectToDo),
+        $("<td>").text(objectToDo).prepend(checkmark),
         $("<td>").text(objectCategory),
         $("<td>").text(objectImportance),
         $("<td>").text(objectDate)
