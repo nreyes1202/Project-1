@@ -1,3 +1,6 @@
+//global variables
+var itemId = 1;
+
 //initializing firebase
 var config = {
     apiKey: "AIzaSyA2QGrQQuHKU30S6xrM9MFwcUzjlcwjltQ",
@@ -73,6 +76,7 @@ database.ref().on("child_added", function(childSnapshot)
     
     checkmark.attr("dat-to-do");
     checkmark.addClass("checkbox");
+    checkmark.
     checkmark.text("✓");
 
     //Create the new row
@@ -86,9 +90,11 @@ database.ref().on("child_added", function(childSnapshot)
 
     //Append the new row to the table
     $("#to-do-table > #to-do-list").append(newRow);
+
+    itemId++;
 });
 
 $(document).on("click", ".checkbox", function()
 {
-    alert("I've been clicked.")
+    alert(this.objectToDo)
 });
