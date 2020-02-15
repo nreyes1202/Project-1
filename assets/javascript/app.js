@@ -76,7 +76,6 @@ database.ref().on("child_added", function(childSnapshot)
     
     checkmark.attr("dat-to-do");
     checkmark.addClass("checkbox");
-    checkmark.
     checkmark.text("✓");
 
     //Create the new row
@@ -96,5 +95,6 @@ database.ref().on("child_added", function(childSnapshot)
 
 $(document).on("click", ".checkbox", function()
 {
-    alert(this.objectToDo)
+    alert("I've been clicked.")
 });
+
