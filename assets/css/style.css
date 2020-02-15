@@ -74,3 +74,7 @@ input[type=toDo]:focus {
   width: 33%;
   margin: 1vw;
 }
+
+.checkbox {
+  margin: 3px 10px 3px 0px;
+}
