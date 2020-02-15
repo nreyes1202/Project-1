@@ -16,12 +16,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
-<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css?family=Rochester&display=swap" rel="stylesheet">
-            
-=======
 
->>>>>>> ad9988060d104da4620bb93e19f97cc30c52dab3
 </head>
 
 <body>
@@ -68,27 +64,67 @@
         <div class="col-sm-6 col-md-4 d-inline">
             <img src="assets/images/filler-avatar.png" alt="Avatar" id="avatar" class="d-inline">
         </div>
-<<<<<<< HEAD
 
     </section>
             <div class = "card-style mb-4 col-md-12">
                 <div class = "card-style  card-header col-md-12">To-Do List</div>
                 <div class = "card-style  card-body  col-md-12">
-=======
-        <div class = "col-md-12">
-            <!-- To-Do's -->
-            <div class = "card mb-4">
-                <div class = "card-header">To-Do List</div>
-                <div class = "card-body">
->>>>>>> 5e536e584b17db0f2dfc7720f4c8e3bbcbdf9580
                     <table class = "table table-sm table-hover" id = "to-do-table">
+    <div class="wrapper1 auto-center">
+        <div id="header" class="d-flex justify-content-center">
+            <h1>To Do Or Not To Do List</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="toDoInput">To Do</label>
+                <input type="toDo" class="form-control" id="toDoInput" placeholder="Write your to-do here.">
+            </div>
+            <div class="form-group">
+                <label for="form-category">Categories</label>
+                <select type="categories" class="form-control" id="categoryInput">
+                    <option>Work</option>
+                    <option>School</option>
+                    <option>Home</option>
+                    <option>Events</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="colorOfInput">Color</label>
+                <input type="color" class="form-control" id="colorOfInput" placeholder="Select color of to-do.">
+            </div>
+            <div class="form-group">
+                <label for="importanceLevelInput">Level of Importance</label>
+                <select type="importance" class="form-control" id="importanceLevelInput">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+            </div>
+            <div class="form-group">
+                <label for="dateDueInput">Due Date</label>
+                <input type="datetime-local" class="form-control" id="dateDueInput" placeholder="Select date due">
+            </div>
+            <section class="text-center">
+                <button type="submit" class="btn center-block" id="submitButton">Add To-do</button>
+            </section>
+        </form>
+        <div class="wrapper1">
+            <section id="score" class="d-flex justify-content-center">
+                <img style="border: 5px double #fe5bac;" src="assets/images/girl-5.JPG" alt="Avatar" id="avatar">
+                <img style="border: 5px double #fe5bac;" src="assets/images/glitterBomb3.gif" alt="Avatar" id="glitter">
+            </section>
+        </div>
+        <div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <table class="table table-sm table-hover" id="to-do-table">
                         <thead>
+                            <label class="card-header d-flex justify-content-center">To-Do List</label>
                             <tr>
-                                <th scope = "col">To-Do</th>
-                                <th scope = "col">Category</th>
-                                <th scope = "col">Importance Level</th>
-                                <th scope = "col">Due Date</th>
-                                <th scope = "col">Time Left</th>
+                                <th scope="col">To-Do</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Importance Level</th>
+                                <th scope="col">Due Date</th>
+                                <!-- <th scope = "col">Time Left</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -98,12 +134,12 @@
             </div>
     </div>
 
-    
-</body>
-</html>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+</body>
+
+</html>
