@@ -1,78 +1,77 @@
 body{
-    background: url("../images/pink_rice/pink_rice.png");
-    
+  background: url("../images/pink_rice/pink_rice.png");
+  
 }
 #submitButton{
-    color: white;
-    background-color: #fe5bac;
+  color: white;
+  background-color: #fe5bac;
 }
 
 div {
-    border: 5px double #fe5bac;
-    margin: 10px;
-    font-family: 'Rochester', cursive;
-    
+  border: 5px double #fe5bac;
+  margin: 10px;
+  font-family: 'Rochester', cursive;
+  
 }
 input[type=toDo]:focus {
-    background-color: #fe5bac;
-  }
-  input[type=color]:focus {
-    background-color: #fe5bac;
-  }
-  input[type=date]:focus {
-    background-color: #fe5bac;
-  }
-  select[type=categories]:focus {
-    background-color: #fe5bac;
-  }
-  select[type=importance]:focus {
-    background-color: #fe5bac;
-  }
-  {
-      background-color: #ebb2d6;
-  }
+  background-color: #fe5bac;
+}
+input[type=color]:focus {
+  background-color: #fe5bac;
+}
+input[type=date]:focus {
+  background-color: #fe5bac;
+}
+select[type=categories]:focus {
+  background-color: #fe5bac;
+}
+select[type=importance]:focus {
+  background-color: #fe5bac;
+}
+{
+    background-color: #ebb2d6;
+}
 
 
 
-  label{
-      margin-left: 5px;
-      color: white;
-      font-size: 25px;
-  }
+label{
+    margin-left: 5px;
+    color: white;
+    font-size: 25px;
+}
 
-  .card-header{
-    color: #fe5bac;
-  }
- 
-  
+.card-header{
+  color: #fe5bac;
+}
+
+
 
 #header{
-    color: white;
+  color: white;
 }
 .wrapper1{
-    width: 90vw;
-    background-color: #f2cfd5;
+  background-color: #f2cfd5;
 
 }
 
 #score {
-    width: 100%;
+  width: 100%;
 }
 
 .auto-center {
-    margin: 0 auto;
-    max-width: 960px;;
+  margin: 0 auto;
+  max-width: 960px;;
 
 }
 
 #avatar {
-    height: 50vh;
-    margin: 1vw;
+  height: 50vh;
+  margin: 1vw;
 }
 
 #glitter {
-    height: 50vh;
-    width: 33%;
-    margin: 1vw;
+  height: 50vh;
+  width: 33%;
+  margin: 1vw;
 }
 
