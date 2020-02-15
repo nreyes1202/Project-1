@@ -94,8 +94,22 @@ database.ref().on("child_added", function(childSnapshot)
     itemId++;
 });
 
-$(document).on("click", ".checkbox", function()
-{
-    alert("I've been clicked!");
-});
+// $(document).on("click", ".checkbox", function()
+// {
+//     alert("I've been clicked!");
+// });
 
+$(function () {
+    function moveItems(origin, comp) {
+        $(origin).find('itemID').appendTo(comp);
+    }
+
+
+
+
+
+
+
+
+
+});
