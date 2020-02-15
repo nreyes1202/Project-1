@@ -70,9 +70,9 @@ input[type=toDo]:focus {
 }
 
 #glitter {
-    height: 50vh;
-    width: 33%;
-    margin: 1vw;
+  height: 50vh;
+  width: 33%;
+  margin: 1vw;
 }
 
 .checkbox {
