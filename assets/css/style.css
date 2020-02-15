@@ -85,8 +85,8 @@ label{
   background-color: none;
   color: white;
   text-align: center;
-  font-size: 10vw;
-  top: -270px;
+  font-size: 6vw;
+  top: -90%;
 }
 
 .score-keeper {
@@ -94,8 +94,8 @@ label{
   background-color: none;
   color: white;
   text-align: center;
-  font-size: 10vw;
-  top: -270px;
+  font-size: 6vw;
+  top: -90%;
 }
 
 .checkbox {
