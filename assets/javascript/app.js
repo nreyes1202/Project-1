@@ -88,13 +88,11 @@ database.ref().on("child_added", function(childSnapshot)
     $("#to-do-table > tbody").append(newRow);
 });
 
-//Creating score for each importance level item.
 
-    $('.checkbox').data('low', 2);
+
+    //$('.checkmark').data("low", 2);
     
-//  //Create checkmark button to add before todo.
-//  var checkmark = $("<button>");
-
-//  checkmark.attr("dat-to-do");
-//  checkmark.addClass("checkbox");
-//  checkmark.text("✓");
+    //$('.checkbox').data('medium', 4);
+    //$('checkbox').data('high', 6);
+    
+    

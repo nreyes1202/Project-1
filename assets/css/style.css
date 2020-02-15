@@ -75,3 +75,7 @@ label{
   margin: 1vw;
 }
 
+.score-keeper {
+  position: absolute;
+  background-color: #fe5bac;
+}
