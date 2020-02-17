@@ -46,9 +46,21 @@
             <div class="form-group">
                 <label for="importanceLevelInput">Level of Importance</label>
                 <select type="importance" class="form-control" id="importanceLevelInput">
-                    <option>Low</option>
-                    <option>Medium</option>
-                    <option>High</option>
+                    <option>
+                        Low (
+                            <div id="low-value" class="importance-value">1</div> 
+                            point)
+                    </option>
+                    <option>
+                        Medium (
+                            <div id="medium-value" class="importance-value">2</div>
+                             points)
+                    </option>
+                    <option>
+                        High (
+                            <div id="high-value" class="importance-value">3</div>
+                             points)
+                    </option>
             </div>
             <div class="form-group">
                 <label for="dateDueInput">Due Date</label>
@@ -65,6 +77,7 @@
                     <section class="score-title"> Score</section>
                     <section class="score-keeper">0</section>
                 </div>
+
             </section>
         </div>
         <div>

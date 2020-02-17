@@ -97,5 +97,55 @@ database.ref().on("child_added", function(childSnapshot)
 $(document).on("click", ".checkbox", function()
 {
     alert("I've been clicked!");
+
+    // made by Jean attempting to change the score
+    if (importanceId = 1) {
+        score+1
+    };
+    if (importaceId = 2) {
+        score+2
+    };
+    if (importanceId = 3) {
+        score+3
+    };
+
+    document.getElementById('#avatar').src="assets/images/girl-4.jpg"
 });
+
+// Jean's changes
+// trying to return a value for ID 
+// based on priority level. 
+// Does not work. I am not sure why.
+var importanceId = $('.importance-value').val();
+var lowId = $("#low-value").val();
+
+var importanceValue = (lowId);
+
+console.log("importance value " + importanceValue);
+console.log("low ID " + lowId);
+console.log("importance ID " + importanceId);
+
+// gets the variables
+var mediumId = $('#medium-value');
+var highId = $('#high-value');
+var scoreKeeper = $('.score-keeper')
+
+// assigns values to variables if the html values dont work
+var lowValue = 1;
+var mediumValue = 2;
+var highValue = 3;
+
+var score = 0;
+console.log("score " + score);
+
+
+console.log("low value " + lowValue);
+console.log("medium value " + mediumValue);
+console.log("high value " + highValue);
+
+// gets the avatar image
+var avatar = document.getElementById('avatar');
+
+
+
 
