@@ -31,11 +31,13 @@ $("#submitButton").on("click", function(event)
         category: toDoCategory,
         color: toDoColor,
         importance: toDoImportanceLevel,
-        date: toDoDueDate
+        date: toDoDueDate,
+        checked: false,
     };
 
     //Uploads new to-do to the database
-    database.ref().push(newToDo);
+    var newRef = database.ref().push(newToDo);
+    var newId = newRef.name;
 
     //logs everything to console
     console.log(newToDo.todo);
@@ -43,6 +45,8 @@ $("#submitButton").on("click", function(event)
     console.log(newToDo.color);
     console.log(newToDo.importance);
     console.log(newToDo.date);
+    console.log(newToDo.checked);
+    console.log(newToDo.itemId);
 
     //clears all text-boxes
     $("#toDoInput").val("");
@@ -74,9 +78,10 @@ database.ref().on("child_added", function(childSnapshot)
     //Create checkmark button to add before todo.
     var checkmark = $("<button>");
     
-    checkmark.attr("dat-to-do");
+    checkmark.attr("data-to-do");
     checkmark.addClass("checkbox");
-    checkmark.attr("id", itemId);
+    checkmark.attr("id", childSnapshot.key);
+    console.log(childSnapshot.key);
     checkmark.text(itemId);
 
     //Create the new row
@@ -88,14 +93,26 @@ database.ref().on("child_added", function(childSnapshot)
         // $("<td>").text(objectTimeLeft)
     );
 
+    // if checked
     //Append the new row to the table
     $("#to-do-table > #to-do-list").append(newRow);
+
+    // else if not checked, move to completed table
 
     itemId++;
 });
 
-$(document).on("click", ".checkbox", function()
+$(document).on("click", ".checkbox", function(event)
 {
-    alert("I've been clicked!");
+    //When checkbox is clicked, get ID of checkbox
+    console.log(this.id);
+
+    // flip checked state for todo item in database
+    database.ref(this.id).update({ checked: true});
+
+
+    // remove form top table
+
+    // add to bottom table
 });
 
