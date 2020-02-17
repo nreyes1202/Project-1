@@ -41,14 +41,18 @@ label{
 }
 
 .card-header{
+  font-size: 3vw;
   color: #fe5bac;
+  background-size: cover;
+  background: url("../images/trail-of-sparkles3sm.png");
 }
 
 
 
 #header{
-  color: white;
+  color: #fe5bac;
 }
+
 .wrapper1{
   background-color: #f2cfd5;
 
@@ -101,3 +105,15 @@ label{
 .checkbox {
   margin: 3px 10px 3px 0px;
 }
+
+.jumbotron {
+  width: auto;
+  background: url("../images/Banner.png");
+  background-size: cover;
+}
+
+#title {
+  font-size: 5vw;
+}
+
+
