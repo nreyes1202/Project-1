@@ -1,6 +1,3 @@
-//global variables
-var itemId = 1;
-
 //initializing firebase
 var config = {
     apiKey: "AIzaSyA2QGrQQuHKU30S6xrM9MFwcUzjlcwjltQ",
@@ -14,8 +11,7 @@ var database = firebase.database();
 
 //Creating new to-do when submit button is clicked.
 
-$("#submitButton").on("click", function(event)
-{
+$("#submitButton").on("click", function (event) {
     event.preventDefault();
 
     //grabs user input
@@ -53,52 +49,42 @@ $("#submitButton").on("click", function(event)
 });
 
 //Create firebase event for adding a row in the html when a user adds an entry.
-database.ref().on("child_added", function(childSnapshot)
-{
-    console.log(childSnapshot.val());
-
-    //Store everything into a variable.
-    var objectToDo = childSnapshot.val().todo;
-    var objectCategory = childSnapshot.val().category;
-    var objectImportance = childSnapshot.val().importance;
-    var objectDate = childSnapshot.val().date;
-    var objectColor = childSnapshot.val().color;
+database.ref().on("child_added", function (childSnapshot) {
+    //Assign values from the database object. 
+    var key = childSnapshot.key;
+    var value = childSnapshot.val();
 
     //To-Do Information
-    console.log(objectToDo);
-    console.log(objectCategory);
-    console.log(objectImportance);
-    console.log(objectDate);
-    console.log(objectColor);
+    console.log(value);
 
-    //Create checkmark button to add before todo.
-    var checkmark = $("<button>");
-    
-    checkmark.attr("dat-to-do");
-    checkmark.addClass("checkbox");
-    checkmark.attr("id", itemId);
-    checkmark.text(itemId);
+    //Create checkmark box to add before todo.
+    var checkbox = $("<input type='checkbox'>");
+    checkbox.on("click", function (event) {
+        if ($(this).prop("checked") == true) {
+            childSnapshot.ref.child("checked").set($(this).prop("checked"));
+        }
+        else if ($(this).prop("checked") == false) {
+            childSnapshot.ref.child("checked").set(false);
+        }
+    });
+
+    //Marking tasks on HTML as checked to match database.
+    if (value.checked == true) {
+        $(checkbox).prop("checked", value.checked)
+    };
 
     //Create the new row
     var newRow = $("<tr>").append(
-        $("<td>").text(objectToDo).prepend(checkmark),
-        $("<td>").text(objectCategory),
-        $("<td>").text(objectImportance),
-        $("<td>").text(objectDate)
-        // $("<td>").text(objectTimeLeft)
+        $("<td>").text(value.todo).prepend(checkbox),
+        $("<td>").text(value.category),
+        $("<td>").text(value.importance),
+        $("<td>").text(value.date)
+        // $("<td>").text(value.timeleft)
     );
 
     //Append the new row to the table
     $("#to-do-table > #to-do-list").append(newRow);
-
-    itemId++;
 });
-
-$(document).on("click", ".checkbox", function()
-{
-    alert("I've been clicked!");
-});
-
 $(document).ready(function(){
     var count = 0; 
 
@@ -107,4 +93,3 @@ $(document).ready(function(){
         $(".score-keeper").html(count);
     })
 })
-
