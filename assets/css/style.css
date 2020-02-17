@@ -74,8 +74,9 @@ label{
 }
 
 #score-box {
-  height: 50vh;
-  width: 30%;
+  background: url("../images/glitterBomb3.gif");
+  margin: 1vw;
+  width: 100%;
 }
 
 #glitter {
@@ -90,7 +91,6 @@ label{
   color: white;
   text-align: center;
   font-size: 6vw;
-  top: -90%;
 }
 
 .score-keeper {
@@ -99,7 +99,6 @@ label{
   color: white;
   text-align: center;
   font-size: 6vw;
-  top: -90%;
 }
 
 .checkbox {
@@ -116,4 +115,7 @@ label{
   font-size: 5vw;
 }
 
+#score {
+  width: 100%;
+}
 
