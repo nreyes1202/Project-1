@@ -28,9 +28,9 @@ select[type=categories]:focus {
 select[type=importance]:focus {
   background-color: #fe5bac;
 }
-{
-    background-color: #ebb2d6;
-}
+
+
+
 
 
 
@@ -38,6 +38,7 @@ label{
     margin-left: 5px;
     color: white;
     font-size: 25px;
+    
 }
 
 .card-header{
