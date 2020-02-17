@@ -85,7 +85,11 @@ database.ref().on("child_added", function (childSnapshot) {
     //Append the new row to the table
     $("#to-do-table > #to-do-list").append(newRow);
 });
+$(document).ready(function(){
+    var count = 0; 
 
-if (value.checked == true) {
-    $(value = +- 1)
-}
+    $("#submitButton").click(function(){
+        count++;
+        $(".score-keeper").html(count);
+    })
+})
