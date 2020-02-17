@@ -57,7 +57,7 @@ database.ref().on("child_added", function (childSnapshot) {
     //To-Do Information
     console.log(value);
 
-    //Create checkmark button to add before todo.
+    //Create checkmark box to add before todo.
     var checkbox = $("<input type='checkbox'>");
     checkbox.on("click", function (event) {
         if ($(this).prop("checked") == true) {
