@@ -99,3 +99,11 @@ $(document).on("click", ".checkbox", function()
     alert("I've been clicked!");
 });
 
+$(document).ready(function(){
+    var count = 0; 
+
+    $("#submitButton").click(function(){
+        count++;
+        $(".score-keeper").html(count);
+    })
+})
