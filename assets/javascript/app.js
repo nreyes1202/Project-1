@@ -86,10 +86,10 @@ database.ref().on("child_added", function (childSnapshot) {
     //Append the new row to the table
     $("#to-do-table > #to-do-list").append(newRow);
 });
-$(document).ready(function(){
-    var count = 0; 
+$(document).ready(function () {
+    var count = 0;
 
-    $("#submitButton").click(function(){
+    $("#submitButton").click(function () {
         count++;
         $(".score-keeper").html(count);
     })
