@@ -56,5 +56,3 @@ See also the list of [contributors](https://github.com/nreyes1202/Project-1/grap
 ### Prerequisites
 
 The Libraries on this project are Bootstrap CSS and Script links, Jquery links.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
